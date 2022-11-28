@@ -1,0 +1,9 @@
+body{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(91, 78, 155, 0.744);
+}
+.text-container{
+    display: flex;
+    justify-content: center;
+}
