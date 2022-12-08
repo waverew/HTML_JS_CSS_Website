@@ -20,8 +20,20 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
 .paragraph{
     position:relative;
     bottom: 0;
     display: flex;
+}
+textarea{
+    width: 20em;
+    height: 10em;
 }

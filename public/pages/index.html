@@ -15,18 +15,34 @@
                         <p>Profile</p>
                         <p>Sources</p>
                         <p>Pictures</p>
-                        <p><a href="/about">About me</a></p>
+                        <a href="/about">About me</a>
                     </div>
                     <div class="subNavigation">
                         <p><b>temp temp temp</b></p>
                     </div>
                 </header>
-                <div class="main">
+                <div>
                     <h1>Welcome to my test page</h1>
                     <h2>Feel free to join me</h2>
                     <p>My name is hex, nice to meet you!</p>
                     <p>I decided to learn how to write servers and thats my page to test all the stuff i want to test</p>
                     <a href="/profile">Come to your profile page!</a>
+                </div>
+                <div>
+                    <form action="/post" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name</label><br>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="message">Message</label><br>
+                                <textarea id="message" name="user_message"></textarea>
+                            </li>
+                            <li>    
+                                <button type="submit">Submit</button>
+                            </li>
+                    </form>
                 </div>
             </div>
         </div>
