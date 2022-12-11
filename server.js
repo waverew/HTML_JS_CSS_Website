@@ -3,6 +3,7 @@ const bodyParse = require("body-parser");
 const app = express();
 const port = 8080;
 const mysql = require('mysql');
+const about = require('./routes/about.js');
 const { con } = require("./config");
 const conn = mysql.createConnection(con);
 conn.connect(function(err) {
@@ -12,6 +13,7 @@ conn.connect(function(err) {
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({extended: true}));
+app.use('/about', about);
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/pages/index.html");
 });
@@ -30,9 +32,6 @@ app.get("/sources", (req, res) => {
 });
 app.get("/group", (req, res) => {
     res.sendFile(__dirname + "/public/pages/user.html");
-});
-app.get("/about", (req, res) => {
-    res.sendFile(__dirname + "/public/pages/about.html");
 });
 app.get("*", (req, res) => {
     res.status(404).send("404");
