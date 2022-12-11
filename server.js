@@ -8,6 +8,7 @@ const profile = require('./routes/profileRoute');
 const index = require('./routes/indexRoute');
 const projects = require('./routes/projectsRoute');
 const pictures = require('./routes/picturesRoute');
+const notFound = require('./routes/404Route');
 const { con } = require("./config");
 const conn = mysql.createConnection(con);
 conn.connect(function(err) {
@@ -22,12 +23,10 @@ app.use('/about', about);
 app.use('/profile', profile);
 app.use('/sources', projects);
 app.use('/pictures', pictures);
+app.use('*', notFound);
 app.post('/post', (req, res) => {
     console.log(req.body);  // you will get your data in this as object.
     res.redirect('/');
-});
-app.get("*", (req, res) => {
-    res.status(404).send("404");
 });
 app.listen(port,() =>{
     console.log(`Server is running on http://localhost:${port}`);
