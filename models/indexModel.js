@@ -7,14 +7,14 @@ class User {
     }
     addToDb(){
         const add = "INSERT INTO message VALUES (?, ?, ?);";
-        db.connection.query(add, [this.id, this.name, this.message], (err, result) => {
+        db.connection.query(add, [this.id, this.message, this.name], (err, result) => {
             if (err) throw err;
 
             (console.log('added', result.affectedRows));
         });
     }
     removeFromDb(id){
-        const rm = "DELETE FROM message WHERE ID = ?;"
+        const rm = "DELETE FROM message WHERE ID = ?;";
         db.connection.query(rm, id, (err, result) => {
             if (err) throw err;
 
@@ -22,7 +22,7 @@ class User {
         });
     }
     selectMessageDb(id){
-        const sel = "SELECT Message_text FROM message WHERE ID = ?;"
+        const sel = "SELECT Message_text FROM message WHERE ID = ?;";
         db.connection.query(sel, id, (err, result) => {
             if (err) throw err;
             
