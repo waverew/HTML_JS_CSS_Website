@@ -9,6 +9,7 @@ const projects = require('./routes/projectsRoute');
 const pictures = require('./routes/picturesRoute');
 const notFound = require('./routes/404Route');
 const database = require('./config');
+const user = require('./models/indexModel');
 database.connect();
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParse.json());
@@ -26,3 +27,8 @@ app.post('/post', (req, res) => {
 app.listen(port,() =>{
     console.log(`Server is running on http://localhost:${port}`);
 });
+
+
+const useb = new user(1, 'Jhon', "bebra");
+
+useb.selectMessageDb(1);

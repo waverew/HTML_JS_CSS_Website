@@ -6,12 +6,13 @@ const config = {
     port: 3030,
     database: "test_1"
 }
+const connection = mysql.createConnection(config)
 const connect = () => {
-    mysql.createConnection(config).connect(function(err){
+    connection.connect(function(err){
     if (err) throw err;
     console.log("Connected to database!");
     });
 }
 module.exports = {
-    config, connect
+    connection, connect
 }
