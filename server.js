@@ -1,20 +1,15 @@
 const express = require("express");
 const bodyParse = require("body-parser");
 const app = express();
-const port = 8080;
-const mysql = require('mysql');
+const port = '8080';
 const about = require('./routes/aboutRoute');
 const profile = require('./routes/profileRoute');
 const index = require('./routes/indexRoute');
 const projects = require('./routes/projectsRoute');
 const pictures = require('./routes/picturesRoute');
 const notFound = require('./routes/404Route');
-const { con } = require("./config");
-const conn = mysql.createConnection(con);
-conn.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected to database!");
-});
+const database = require('./config');
+database.connect();
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({extended: true}));
