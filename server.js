@@ -27,8 +27,3 @@ app.post('/post', (req, res) => {
 app.listen(port,() =>{
     console.log(`Server is running on http://localhost:${port}`);
 });
-
-
-const useb = new user(1, 'Jhon', "bebra");
-
-useb.selectMessageDb(1);
