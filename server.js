@@ -20,10 +20,6 @@ app.use('/profile', profile);
 app.use('/sources', projects);
 app.use('/pictures', pictures);
 app.use('*', notFound);
-app.post('/post', (req, res) => {
-    console.log(req.body);  // you will get your data in this as object.
-    res.redirect('/');
-});
 app.listen(port,() =>{
     console.log(`Server is running on http://localhost:${port}`);
 });

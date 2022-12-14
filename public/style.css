@@ -9,10 +9,9 @@ body{
     margin-right: 3em;
     margin-left: 1em;
 }*/
-/*.main{
-    position: relative;
-    left: 10%;
-}*/
+.main{
+    margin-left: 17%;
+}
 .text-container{
     display: flex;
     justify-content: center;
