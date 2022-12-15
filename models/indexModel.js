@@ -28,5 +28,16 @@ class User {
             console.log('selected', result);
         });
     }
+    selectAllId(){
+        const sel = "SELECT ID FROM user;";
+        db.connection.query(sel, (err, result) => {
+            if (err) throw err;
+            console.log('selected');
+            for (var i = 0; i < result.length; i++){
+                console.log(result[i].ID);
+            }
+            // return new Promise()
+        });
+    }
 }
 module.exports = User;
