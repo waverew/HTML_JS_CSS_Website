@@ -1,8 +1,10 @@
 async function getData(){
-    const value = fetch("/about",{
+    const value = await fetch("/",{
         method:"GET"
-    })
-    const elem = document.getElementById()
-    elem.appendChild
-    Element.innerHTML = value
+    });
+    console.log(value);
+    // const elem = document.getElementById('')  // 
+    // elem.appendChild()
+    // Element.innerHTML = value
 }
+getData();

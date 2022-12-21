@@ -29,7 +29,7 @@ class User {
         });
     }
     async selectAllId(){
-        const sel = "SELECT ID FROM user;";
+        const sel = "SELECT * FROM user;";
         const get = () => {  // здесь я получаю айди из дб и отправляю в контроллер
             return new Promise((res, rej) => {
                 setTimeout(() => {
