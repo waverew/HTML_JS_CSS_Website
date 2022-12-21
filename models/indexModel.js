@@ -28,16 +28,25 @@ class User {
             console.log('selected', result);
         });
     }
-    selectAllId(){
+    async selectAllId(){
         const sel = "SELECT ID FROM user;";
-        db.connection.query(sel, (err, result) => {
+        const get = () => {  // здесь я получаю айди из дб и отправляю в контроллер
+            return new Promise((res, rej) => {
+                setTimeout(() => {
+                        db.connection.query(sel, (err, result) => {
+                        if (err) throw err;
+                        console.log('selected');
+                        res(result);
+                    });
+                }, 1000);
+            });
+        }
+        const ids = await get();
+        return ids;
+        /*db.connection.query(sel, (err, result) => {
             if (err) throw err;
             console.log('selected');
-            for (var i = 0; i < result.length; i++){
-                console.log(result[i].ID);
-            }
-            // return new Promise()
-        });
+        }); */
     }
 }
 module.exports = User;
