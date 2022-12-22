@@ -28,7 +28,7 @@ class User {
             console.log('selected', result);
         });
     }
-    async selectAllId(){
+    async selectAll(){
         const sel = "SELECT * FROM user;";
         const get = () => {  // здесь я получаю айди из дб и отправляю в контроллер
             return new Promise((res, rej) => {
@@ -38,7 +38,7 @@ class User {
                         console.log('selected');
                         res(result);
                     });
-                }, 1000);
+                }, 500);
             });
         }
         const ids = await get();

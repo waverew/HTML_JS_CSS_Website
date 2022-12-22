@@ -1,5 +1,5 @@
 async function getData(){
-    const value = await fetch("/",{
+    const value = await fetch("/data",{
         method:"GET"
     });
     console.log(value);

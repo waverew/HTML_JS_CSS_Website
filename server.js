@@ -9,6 +9,7 @@ const projects = require('./routes/projectsRoute');
 const pictures = require('./routes/picturesRoute');
 const notFound = require('./routes/404Route');
 const database = require('./config');
+const getData = require('./routes/dbRoute');
 const user = require('./models/indexModel');
 database.connect();
 app.use(express.static(__dirname + "/public"));
@@ -19,6 +20,7 @@ app.use('/about', about);
 app.use('/profile', profile);
 app.use('/sources', projects);
 app.use('/pictures', pictures);
+app.use('/data', getData);
 app.use('*', notFound);
 app.listen(port,() =>{
     console.log(`Server is running on http://localhost:${port}`);
