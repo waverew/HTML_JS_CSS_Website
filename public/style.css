@@ -1,31 +1,22 @@
 body{
-    font-family: sans-serif;
-    background-color: rgba(255, 255, 255, 0.737);
+    margin: 0;
     height: 100vh;
     width: 100vw;
-    margin: 0;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/*p{
-    margin-right: 3em;
-    margin-left: 1em;
-}*/
 .main{
-    margin-left: 17%;
+
 }
-.text-container{
-    display: flex;
-    justify-content: center;
+.container{
+    background-color: black;
 }
 .navigation{
-    background-color: rgba(1, 2, 17, 0.813);
-    width: 100vw;
     display: flex;
     align-items: center;
-    gap: 10%;
-    justify-content: center;
-}
-.subNavigation{
-    background-color: rgba(1, 2, 17, 0.813);
+    justify-content: space-around;
+    list-style-type: none;
+    
 }
 a:link{
     text-decoration: none;
@@ -33,14 +24,11 @@ a:link{
 }
 a:visited{
     color: white;
-    text-decoration: none;
 }
-.paragraph{
-    position:relative;
-    bottom: 0;
-    display: flex;
+ul{
+    margin:0;
 }
-textarea{
-    width: 20em;
-    height: 10em;
+li{
+    height: max-content;
+    width: max-content;
 }
