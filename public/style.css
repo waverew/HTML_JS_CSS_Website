@@ -5,8 +5,17 @@ body{
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.main{
-
+.main-cont{
+    display: flex;
+    justify-content: left;
+}
+.text-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 40rem;
+    width: 20rem;
+    border-radius: 2em;
 }
 .container{
     background-color: black;
@@ -16,7 +25,6 @@ body{
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
-    
 }
 a:link{
     text-decoration: none;
@@ -40,10 +48,10 @@ li:hover{
     
 }
 @keyframes bgi{
- 0% {left: 0px; transform: rotate(360deg);}
- 25% {left: 10vw; transform: rotate(180deg)}
- 50% {left: 20vw; transform: rotate(90deg);}
- 75% {left: 10vw; transform: rotate(90deg);}
+ 0% {left: 0px;}
+ 25% {left: 10vw; }
+ 50% {left: 20vw; }
+ 75% {left: 10vw; }
  100% {left: 0px}
 }
 .bg{
