@@ -29,6 +29,27 @@ ul{
     margin:0;
 }
 li{
-    height: max-content;
-    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 8em;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.544);
+    
+}
+@keyframes bgi{
+ 0% {left: 0px; transform: rotate(360deg);}
+ 25% {left: 10vw; transform: rotate(180deg)}
+ 50% {left: 20vw; transform: rotate(90deg);}
+ 75% {left: 10vw; transform: rotate(90deg);}
+ 100% {left: 0px}
+}
+.bg{
+    position:absolute;
+    z-index: -100;
+    animation-name: bgi;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
