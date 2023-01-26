@@ -8,3 +8,11 @@ async function getData(){
     // Element.innerHTML = value
 }
 getData();
+const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', 'y', '/', 'u', 'h', 'j', 'l', 'e', 'f', '/', '//'];
+
+function animation() {
+  let el = document.getElementById("anim").innerText;
+  console.log(el);
+  
+}
+setTimeout(animation(), 3000);

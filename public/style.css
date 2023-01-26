@@ -26,6 +26,10 @@ body{
     justify-content: space-around;
     list-style-type: none;
 }
+.logo{
+    height: 20vh;
+    width: auto;
+}
 a:link{
     text-decoration: none;
     color: white;
