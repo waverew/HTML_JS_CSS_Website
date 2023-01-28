@@ -10,9 +10,16 @@ async function getData(){
 getData();
 const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', 'y', '/', 'u', 'h', 'j', 'l', 'e', 'f', '/', '//'];
 
-function animation() {
+window.onload = () => {
   let el = document.getElementById("anim").innerText;
   console.log(el);
-  
+  while(true) {
+    const text = "";
+    for (let i; i < Math.random(20); i++){
+      text+= textArray[Math.random(22)];
+    }
+    el = text;
+    document.getElementById("anim").innerText = el;
+    return false;
+  }
 }
-setTimeout(animation(), 3000);

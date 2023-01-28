@@ -27,8 +27,7 @@ body{
     list-style-type: none;
 }
 .logo{
-    height: 20vh;
-    width: auto;
+    height: 5vh;
 }
 a:link{
     text-decoration: none;
