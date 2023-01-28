@@ -8,18 +8,16 @@ async function getData(){
     // Element.innerHTML = value
 }
 getData();
-const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', 'y', '/', 'u', 'h', 'j', 'l', 'e', 'f', '/', '//'];
+const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', 'y', '/', 'u', 'h', 'j', 'l', 'e', 'f', '/', '//', " "];
 
 window.onload = () => {
   let el = document.getElementById("anim").innerText;
   console.log(el);
-  while(true) {
-    const text = "";
-    for (let i; i < Math.random(20); i++){
-      text+= textArray[Math.random(22)];
+    const ran = Math.floor(Math.random()*24);
+    let text = "";
+    for (let i = 0; i < ran; i++){
+      text+= textArray[Math.floor(Math.random()*24)];
     }
-    el = text;
-    document.getElementById("anim").innerText = el;
-    return false;
-  }
+    console.log(ran);
+    document.getElementById("anim").innerText = text;
 }
