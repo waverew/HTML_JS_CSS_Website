@@ -5,6 +5,17 @@ body{
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#test{
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.anim-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 .main-cont{
     display: flex;
     justify-content: center;
@@ -63,4 +74,9 @@ li:hover{
     animation-name: bgi;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: rgb(212, 5, 5);
+    }
 }

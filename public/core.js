@@ -9,15 +9,17 @@ async function getData(){
 }
 getData();
 const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', 'y', '/', 'u', 'h', 'j', 'l', 'e', 'f', '/', '//', " "];
-
 window.onload = () => {
-  let el = document.getElementById("anim").innerText;
-  console.log(el);
-    const ran = Math.floor(Math.random()*24);
-    let text = "";
-    for (let i = 0; i < ran; i++){
-      text+= textArray[Math.floor(Math.random()*24)];
-    }
+    const button = document.getElementById('test');
+    const anim = document.getElementById('anim');
+    const ran = Math.floor(Math.random()*300);
     console.log(ran);
-    document.getElementById("anim").innerText = text;
+    setInterval(() => {
+        let text = "";
+        for (let i = 0; i < ran; i++){
+
+            text+= textArray[Math.floor(Math.random()*23)];
+        }
+        anim.innerText = text;
+    }, 2000);
 }
