@@ -11,14 +11,23 @@ body{
     cursor: pointer;
 }
 .anim-cont{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
+    z-index: -100;
+    overflow: hidden;
+    height: 90vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
-p{
-    position: absolute;
+#anim{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 .main-cont{
     display: flex;
