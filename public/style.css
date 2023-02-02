@@ -15,6 +15,10 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    position: absolute;
 }
 .main-cont{
     display: flex;

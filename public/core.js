@@ -21,5 +21,5 @@ window.onload = () => {
             text+= textArray[Math.floor(Math.random()*23)];
         }
         anim.innerText = text;
-    }, 2000);
+    }, 1000);
 }
