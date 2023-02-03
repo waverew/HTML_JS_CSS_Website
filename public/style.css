@@ -16,7 +16,8 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Papyrus', fantasy, serif;
+    font-weight: bold;
     z-index: -100;
     overflow: hidden;
     height: 90vh;
@@ -25,7 +26,6 @@ body{
     padding: 0;
 }
 #anim{
-    overflow: hidden;
     margin: 0px;
     padding: 0px;
 }
@@ -53,6 +53,13 @@ body{
 .logo{
     height: 5vh;
 }
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
 a:link{
     text-decoration: none;
     color: white;
@@ -67,26 +74,13 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2em;
     height: 5em;
     width: 8em;
 }
 li:hover{
     background-color: rgba(255, 255, 255, 0.544);
     
-}
-@keyframes bgi{
- 0% {left: 0px;}
- 25% {left: 10vw; }
- 50% {left: 20vw; }
- 75% {left: 10vw; }
- 100% {left: 0px}
-}
-.bg{
-    position:absolute;
-    z-index: -100;
-    animation-name: bgi;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
 }
 @media screen and (max-width: 600px){
     body{

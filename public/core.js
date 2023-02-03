@@ -17,9 +17,8 @@ window.onload = () => {
     setInterval(() => {
         let text = "";
         for (let i = 0; i < ran; i++){
-
-            text+= textArray[Math.floor(Math.random()*23)];
+            text+= textArray[Math.floor(Math.random()*23)] + " ";
         }
         anim.innerText = text;
-    }, 1000);
+    }, 100);
 }
