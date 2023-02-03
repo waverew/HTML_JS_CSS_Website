@@ -12,7 +12,7 @@ const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', '
 window.onload = () => {
     const button = document.getElementById('test');
     const anim = document.getElementById('anim');
-    const ran = 10000 // Math.floor(Math.random()*9000);
+    const ran = 7000 // Math.floor(Math.random()*9000);
     console.log(ran);
     setInterval(() => {
         let text = "";

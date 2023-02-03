@@ -2,13 +2,31 @@ body{
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+@keyframes bgAnimation{
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
 }
 #test{
     background: transparent;
     border-radius: 3px;
     cursor: pointer;
+}
+.main{
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 .anim-cont{
     position: absolute;
@@ -20,10 +38,14 @@ body{
     font-weight: bold;
     z-index: -100;
     overflow: hidden;
-    height: 90vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
     padding: 0;
+    animation-name: bgAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 #anim{
     margin: 0px;
@@ -37,7 +59,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 40rem;
+    height: 80vh;
     width: 20rem;
     border-radius: 2em;
 }
@@ -78,12 +100,15 @@ li{
     height: 5em;
     width: 8em;
 }
+a:hover{
+    color: black;
+}
 li:hover{
-    background-color: rgba(255, 255, 255, 0.544);
+    background-color: rgb(255, 255, 255);
     
 }
-@media screen and (max-width: 600px){
+/*@media screen and (max-width: 600px){
     body{
         background-color: rgb(212, 5, 5);
     }
-}
+}*/
