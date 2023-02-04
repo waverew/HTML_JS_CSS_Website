@@ -3,6 +3,7 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
 }
 div{
     margin: 0;
@@ -27,19 +28,18 @@ div{
     height: 100vh;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 .anim-cont{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     font-family: 'Papyrus', fantasy, serif;
     font-weight: bold;
     z-index: -100;
-    overflow: hidden;
-    height: 100%;
+    height: 300vh;
+    max-height: 300%;
     width: 100vw;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     animation-name: bgAnimation;
@@ -47,24 +47,30 @@ div{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
-#anim{
-    margin: 0px;
-    padding: 0px;
-}
 .main-cont{
+    height: 100vh;
+    max-width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .text-container{
+    
     display: flex;
     justify-content: center;
     background-color: white;
     height: 80vh;
-    width: 20rem;
+    width: 40vw;
     border-radius: 2em;
 }
 .container{
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
     background-color: black;
+}
+.content-cont{
+    height: 100%;
 }
 .navigation{
     display: flex;
