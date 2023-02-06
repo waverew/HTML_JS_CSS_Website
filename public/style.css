@@ -36,8 +36,8 @@ div{
     font-family: 'Papyrus', fantasy, serif;
     font-weight: bold;
     z-index: -100;
-    height: 300vh;
-    max-height: 300%;
+    height: 301vh;
+    max-height: 301%;
     width: 100vw;
     max-width: 100%;
     margin: 0;
@@ -48,11 +48,18 @@ div{
     animation-direction: alternate-reverse;
 }
 .main-cont{
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 .text-container{
     
