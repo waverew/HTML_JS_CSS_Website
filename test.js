@@ -1,5 +1,8 @@
-const a1 = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
-const a2 = a1.map((i) => {
-    return i*i;
-})
-console.log(a2);
+for (var i = 0; i < 30; i++){
+const ryka = Math.floor(Math.random()*2);
+if (ryka == 0){
+    console.log('дрочишь левой');
+}
+else if (ryka == 1) console.log('дрочишь правой');
+else console.log('ну походу не дрочишь');
+}
