@@ -1,2 +1,3 @@
-# FullStack Web app
-Plain HTML5 CSS and JS
+# In this branch I work on my personal website
+My stack is plain JS, HTML, CSS
+For a database I choose MySQL
