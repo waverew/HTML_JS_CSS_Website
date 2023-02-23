@@ -19,7 +19,7 @@ body{
 .snapus{
     height: 100vh;
     scroll-snap-type: y mandatory;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .anim-cont{
     position: absolute;
@@ -33,10 +33,12 @@ body{
     max-width: 100%;
     margin: 0;
     padding: 0;
-    animation-name: bgAnimation;
+    background-color: black;
+    color: white;
+    /*animation-name: bgAnimation;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;*/
 }
 .main-cont{
     min-height: 100vh;
@@ -55,10 +57,14 @@ body{
     transform: translateX(0);
 }
 .text-container{
-    
     background-color: white;
     width: 60vw;
     border-radius: 2em;
+}
+.sent-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     width: 100vw;
