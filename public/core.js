@@ -10,6 +10,14 @@ async function getData(){
 getData();
 const textArray = ['a', 'b', 's', 'd', 'x', 'z', 'c', 'v', 'n', 'm', 'q', 'w', 'y', '/', 'u', 'h', 'j', 'l', 'e', 'f', '/', '//', " "];
 window.onload = () => {
+  const lol = document.getElementById('lol');
+  lol.addEventListener('click', (e) => {
+    console.log(e);
+  })
+  const lel = document.getElementById('lel');
+lel.addEventListener('click', (e) => {
+  console.log(e);
+});
     //const observer = new IntersectionObserver((entries) => {
       //  entries.forEach((entry) => {
         //    console.log(entry);
